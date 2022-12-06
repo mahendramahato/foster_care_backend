@@ -37,7 +37,7 @@ public class Client {
     @Column(name = "age_of_children")
     private int childrenAge;
 
-    @Column(name = "existing_pet_info", length = 10000)
+    @Column(name = "existing_pet_info")
     private String existingPetInfo;
 
     @Column(name = "pet_altered")
@@ -46,13 +46,13 @@ public class Client {
     @Column(name = "foster_program")
     private String program;
 
-    @Column(name = "foster_area",  length = 10000)
+    @Column(name = "foster_area")
     private String area;
 
-    @Column(name = "foster_experience", length = 10000)
+    @Column(name = "foster_experience")
     private String experience;
 
-    @Column(name = "about_applicant", length = 10000)
+    @Column(name = "about_applicant")
     private String aboutyou;
 
     @ElementCollection

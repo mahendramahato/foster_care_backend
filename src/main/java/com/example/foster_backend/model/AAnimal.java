@@ -36,7 +36,7 @@ public class AAnimal {
     @Column(name = "ageOfChildren")
     private int achildrenAge;
 
-    @Column(name = "existingPetInfo", length = 10000)
+    @Column(name = "existingPetInfo")
     private String aexistingPetInfo;
 
     @Column(name = "petAltered")
@@ -45,13 +45,13 @@ public class AAnimal {
     @Column(name = "fosterProgram")
     private String aprogram;
 
-    @Column(name = "fosterArea", length = 10000)
+    @Column(name = "fosterArea")
     private String aarea;
 
-    @Column(name = "fosterExperience", length = 10000)
+    @Column(name = "fosterExperience")
     private String aexperience;
 
-    @Column(name = "aboutApplicant", length = 10000)
+    @Column(name = "aboutApplicant")
     private String aaboutyou;
 
     @ElementCollection
