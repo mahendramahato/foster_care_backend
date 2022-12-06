@@ -9,11 +9,13 @@ import java.util.List;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     public UserRepository userRepository;
 
     @GetMapping
     public List<User> getAllUsers(){ return userRepository.findAll(); }
+
+
 }

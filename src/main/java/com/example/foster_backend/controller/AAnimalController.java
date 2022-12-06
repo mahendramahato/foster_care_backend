@@ -60,21 +60,21 @@ public class AAnimalController {
 
     }
 
-    // get by low appointment scale
-//    @GetMapping("low/")
-//    public List<AAnimal> getAllAAnimalsByLow(){
-//        return aAnimalRepository.getByAppointmentLow();
-//    }
+    @GetMapping("low/")
+    public List<AAnimal> getAllAAnimalsByLow(){
+        return aAnimalRepository.getByAppointmentLow();
+    }
 
-//    @GetMapping("info/{name}")
-//    public ResponseEntity<List<AAnimal>> getAAnimalByName(@PathVariable String name){
-//        List<AAnimal> animal = aAnimalRepository.findByName(name);
-//        return ResponseEntity.ok(animal);
-//    }
+    // get by medium appointment scale
+    @GetMapping("medium/")
+    public List<AAnimal> getAllAAnimalsByMedium(){
+        return aAnimalRepository.getByAppointmentMedium();
+    }
 
-//        @GetMapping("low/")
-//    public List<AAnimal> getAllAAnimalsByLow(){
-//        return aAnimalRepository.getByAppointmentLow();
-//    }
+    // get by high appointment scale
+    @GetMapping("high/")
+    public List<AAnimal> getAllAAnimalsByHigh(){
+        return aAnimalRepository.getByAppointmentHigh();
+    }
 
 }

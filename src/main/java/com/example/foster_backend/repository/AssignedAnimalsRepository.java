@@ -9,19 +9,11 @@ import java.util.List;
 
 @Repository
 public interface AssignedAnimalsRepository extends JpaRepository<AssignedAnimals, Long> {
-    @Query("SELECT c from assigned_animal_to_applicants c WHERE c.appointment_scale = 'Low' ")
-    public List<AssignedAnimals> getByAppointmentLow();
 
-    @Query("SELECT c from assigned_animal_to_applicants c WHERE c.appointment_scale = 'Medium' ")
-    public List<AssignedAnimals> getByAppointmentMedium();
-
-    @Query("SELECT c from assigned_animal_to_applicants c WHERE c.appointment_scale = 'High' ")
-    public List<AssignedAnimals> getByAppointmentHigh();
-
-//    @Query(
-//            value = "SELECT count(appointment_scale) from assigned_animal_to_applicants ",
-//            nativeQuery = true
-//    )
-//    public List<Integer> getLCount();
+    @Query(
+            value = "SELECT count(appointment_scale) from assigned_animal_to_applicants WHERE appointment_scale = 'Low' ",
+            nativeQuery = true
+    )
+    public int getLCount();
 
 }

@@ -26,7 +26,7 @@ public class AssignedAnimals {
     @Column(name = "assigned_status")
     private String assign_status;
 
-    @Column(name = "appointment_info")
+    @Column(name = "appointment_info", length = 1000)
     private String appointment_information;
 
     @Column(name = "appointment_scale")

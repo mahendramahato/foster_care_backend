@@ -63,39 +63,5 @@ public class FormController {
         return ResponseEntity.ok(updateForm);
 
     }
-//
-//
-//    // get by low appointment scale
-//    @GetMapping("medium/")
-//    public List<Client> getAllClientByMedium(){
-//        return clientRepository.getByAppointmentMedium();
-//    }
-//
-//    // get by low appointment scale
-//    @GetMapping("high/")
-//    public List<Client> getAllClientByHigh(){
-//        return clientRepository.getByAppointmentHigh();
-//    }
-//
-//    @GetMapping("weekend")
-//    public List<Client> getAllClientByWeekend(){
-//        return clientRepository.getAllByWeekend();
-//    }
-//
-//    @GetMapping("short")
-//    public List<Client> getAllClientByShort(){
-//        return clientRepository.getAllByShort();
-//    }
-//
-//    @GetMapping("family")
-//    public List<Client> getAllClientByFamily(){
-//        return clientRepository.getAllByFamily();
-//    }
-
-//    @GetMapping("Program/{program}")
-//    public ResponseEntity<List<Client>> getStudentByWeekend(@PathVariable String weekend){
-//        List<Client> weekend_program = clientRepository.findByWeekend(weekend);
-//        return ResponseEntity.ok(weekend_program);
-//    }
 
 }

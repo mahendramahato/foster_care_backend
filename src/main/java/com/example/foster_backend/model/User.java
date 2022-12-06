@@ -3,7 +3,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Getter
 @Setter
@@ -22,6 +25,7 @@ public class User {
     @Column(name = "email_id")
     private String email;
 
-    @Column(name = "pwd")
+    @Column(name = "pwd", length = 60)
     private String password;
+
 }

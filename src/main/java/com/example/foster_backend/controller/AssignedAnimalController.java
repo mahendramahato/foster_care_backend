@@ -24,23 +24,5 @@ public class AssignedAnimalController {
         return assignedAnimalsRepository.findAll();
     }
 
-    // get by low appointment scale
-    @GetMapping("low/")
-    public List<AssignedAnimals> getAllAAnimalsByLow(){
-        return assignedAnimalsRepository.getByAppointmentLow();
-    }
-
-    // get by low appointment scale
-    @GetMapping("medium/")
-    public List<AssignedAnimals> getAllAAnimalsByMedium(){
-        return assignedAnimalsRepository.getByAppointmentMedium();
-    }
-
-    // get by low appointment scale
-    @GetMapping("high/")
-    public List<AssignedAnimals> getAllAAnimalsByHigh(){
-        return assignedAnimalsRepository.getByAppointmentHigh();
-    }
-
 
 }
