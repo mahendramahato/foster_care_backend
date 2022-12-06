@@ -27,7 +27,7 @@ public class AnimalController {
 
     // build create a new client REST API
     @PostMapping
-    public Animal createClient(@RequestBody Animal animal) {
+    public Animal createAnimal(@RequestBody Animal animal) {
         return animalRepository.save(animal);
     }
 
